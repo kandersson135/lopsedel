@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<link rel="apple-touch-icon" href="img/webapp-icon.jpg">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+	<title>Löpsedlar - Gör din egna löpsedel</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/bulma.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<div class="section">
+		<div class="container">
+
+			<div class="columns">
+				<div class="column is-one-third">
+					<p class="is-size-6 has-background-white-ter py-3 px-3 is-uppercase">Gör din egna löpsedel</p>
+
+					<div class="has-background-white-bis py-3 px-3">
+
+
+						<div class="field is-grouped">
+							<div class="control">
+								<div class="file is-link">
+									<label class="file-label">
+										<input class="file-input" type="file" name="resume">
+										<span class="file-cta">
+									      <span class="file-icon">
+									        <i class="fas fa-image"></i>
+									      </span>
+												<span class="file-label">
+									        Lägg till bild
+									      </span>
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="control is-pulled">
+								<button class="button is-link is-light is-pulled-right" id="clear-img-btn">Ta bort bild</button>
+							</div>
+						</div>
+
+
+
+						<div class="field">
+							<label class="label">Rad 1</label>
+							<div class="control">
+								<input class="input" type="text" id="r1" autocapitalize="characters">
+							</div>
+						</div>
+
+						<div class="field">
+							<label class="label">Rad 2</label>
+							<div class="control">
+								<input class="input" type="text" id="r2" autocapitalize="characters">
+							</div>
+						</div>
+
+						<div class="field">
+							<label class="label">Rad 3</label>
+							<div class="control">
+								<input class="input" type="text" id="r3" autocapitalize="characters">
+							</div>
+						</div>
+
+						<div class="field">
+							<label class="label">Rad 4</label>
+							<div class="control">
+								<input class="input" type="text" id="r4" autocapitalize="characters">
+							</div>
+						</div>
+
+						<div class="field">
+							<label class="label">Rad 5</label>
+							<div class="control">
+								<input class="input" type="text" id="r5" autocapitalize="characters">
+							</div>
+						</div>
+
+						<div class="field is-grouped">
+							<div class="control">
+								<button class="button is-link" id="print-btn">Skriv ut</button>
+							</div>
+							<div class="control">
+								<button class="button is-link is-light" id="clear-btn">Rensa</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end column -->
+
+				<div class="column">
+					<div id="poster-container" style="transform: scale(0.5, 0.5);">
+						<div id="header">
+							<div id="headline">FRITIDSNYTT</div>
+						</div>
+						<div class="extracontainer">
+							<div class="extra">EXTRA</div>
+						</div>
+						<div id="img"></div>
+						<div id="textbox">
+							<div class="text text1"></div>
+							<div class="text text2"></div>
+							<div class="text text3"></div>
+							<div class="text text4"></div>
+							<div class="text text5"></div>
+						</div>
+					</div>
+					<!-- end poster-container -->
+				</div>
+				<!-- end column -->
+			</div>
+			<!-- end columns -->
+
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end section -->
+
+	<!-- js -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

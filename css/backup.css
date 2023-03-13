@@ -1,0 +1,113 @@
+/* CUSTOM CLASSES
+----------------------------------------------- */
+@font-face {
+    font-family: 'Flama-Black-Low';
+    src: url('../fonts/flamsemicondblacklow-webfont.eot');
+    src: url('../fonts/flamsemicondblacklow-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flamsemicondblacklow-webfont.woff2') format('woff2'),
+         url('../fonts/flamsemicondblacklow-webfont.woff') format('woff'),
+         url('../fonts/flamsemicondblacklow-webfont.ttf') format('truetype'),
+         url('../fonts/flamsemicondblacklow-webfont.svg#flama_semicondensedblack_low') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.field input {
+  text-transform: uppercase;
+}
+
+#clear-img-btn {
+  z-index: 1 !important;
+}
+
+#img{
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+#img > img{
+    width: 100%;
+}
+
+#poster-container {
+    background-color: #EEE59C;
+    height: 1201px;
+    margin-bottom: 0;
+    margin-left: 50px;
+    position: relative;
+    transform-origin: 0 0 0;
+    width: 801px;
+    padding: 20px;
+}
+
+.text1.info {
+    margin-top: 30px !important;
+    transform-origin: 0 0 0;
+}
+
+.text {
+    display: inline-block;
+    font-family: "Flama-Black-Low";
+    font-size: 400px;
+    height: 160px;
+    text-transform: uppercase;
+    transform-origin: 0 0 0;
+    white-space: nowrap;
+    line-height: 320px;
+    margin-top: -120px;
+    text-shadow: 5px -5px 0 #fff;
+    color: #353535;
+    float:left;
+}
+
+#textbox {transform-origin: 0 0 0;}
+
+#header {background-color: #DE7074;}
+#headline {
+  font-family: "Flama-Black-Low";
+  font-size: 2.5em;
+  text-align: center;
+  color: #F3CE6D;
+  transform: scale(3, 3);
+  padding:25px 10px 25px 10px;
+}
+
+.extracontainer {
+    background-color: #353535;
+    overflow: hidden;
+}
+.extra {
+    color: #EEE59C;
+    font-family: "Flama-Black-Low";
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+    transform: scale(6, 2);
+    padding:10px
+}
+
+/* PRINT */
+@media print {
+  @page {margin: 0; size: A4 portrait;}
+  body {visibility: hidden; background:none;}
+  #poster-container {
+    background-color: #EEE59C !important;
+    visibility: visible;
+    -webkit-print-color-adjust: exact;
+    /*
+    transform: scale(1.25, 1.25) !important;
+    margin-left:-315px !important;
+    margin-top:50px;
+    */
+    
+    transform: scale(2.55, 2.55) !important;
+    margin-left:-615px !important;
+    margin-top:70px;
+  }
+}
